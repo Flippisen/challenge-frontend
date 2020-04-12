@@ -2,9 +2,9 @@
     <div class='login-container'>
       <div class='login-form'>
         <div class='brand-logo'>
-          <img src="@/assets/logo.png"/>
+          <img src="@/assets/logo.png" v-on:click="onLogin"/>
         </div>
-        <LoginForm />
+        <LoginForm v-on:login='onLogin' />
       </div>
     </div>
 </template>
@@ -29,6 +29,11 @@ export default Vue.extend({
   name: 'Login',
   components: {
     LoginForm,
+  },
+  methods: {
+    onLogin() {
+      console.log('Hello');
+    },
   },
 });
 </script>
