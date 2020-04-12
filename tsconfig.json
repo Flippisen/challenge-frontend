@@ -13,11 +13,16 @@
     "baseUrl": ".",
     "types": [
       "webpack-env",
-      "jest"
+      "jest",
+      "webpack",
+      "webpack-env"
     ],
     "paths": {
       "@/*": [
         "src/*"
+      ],
+      "@views": [
+        "src/views/*"
       ]
     },
     "lib": [
