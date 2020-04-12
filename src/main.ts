@@ -3,7 +3,7 @@ import Vue from 'vue';
 // @ts-ignore
 import VueMaterial from 'vue-material';
 import 'vue-material/dist/vue-material.min.css';
-import 'vue-material/dist/theme/default.css';
+import 'vue-material/dist/theme/default-dark.css';
 import App from './App.vue';
 import './registerServiceWorker';
 import router from './router';
