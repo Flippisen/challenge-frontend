@@ -1,6 +1,9 @@
 <template>
     <div class='login-container'>
       <div class='login-form'>
+        <div class='brand-logo'>
+          <img src="@/assets/logo.png"/>
+        </div>
         <LoginForm />
       </div>
     </div>
@@ -13,7 +16,8 @@
     height: 100%;
     max-width: 100%;
     max-height: 100%;
-    background-color: #ff0000;
+    justify-content: center;
+    align-items: center;
   }
 </style>
 

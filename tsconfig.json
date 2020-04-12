@@ -20,9 +20,6 @@
     "paths": {
       "@/*": [
         "src/*"
-      ],
-      "@views": [
-        "src/views/*"
       ]
     },
     "lib": [

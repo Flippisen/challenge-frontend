@@ -1,6 +1,7 @@
 {
   "Login": {
-    "Username": "Username",
-    "Password": "Password"
+    "Login": "Login",
+    "Password": "Password",
+    "Username": "Username"
   }
 }
