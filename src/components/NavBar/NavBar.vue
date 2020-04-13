@@ -14,10 +14,8 @@
       </md-toolbar>
 
       <md-list>
-        <md-list-item to='/challenges'>
-          <md-icon>{{ $t('Navbar.Challenges.Icon') }}</md-icon>
-          <span class='md-list-item-text' >{{ $t('Navbar.Challenges.Title') }}</span>
-        </md-list-item>
+        <nav-bar-item v-for="navBarItem of navBarItems" :key='navBarItem' :title="navBarItem">
+        </nav-bar-item>
       </md-list>
     </md-app-drawer>
 
@@ -46,11 +44,16 @@
 
 <script lang="ts">
 import Vue from 'vue';
+import NavBarItem from '@/components/NavBar/NavBarItem.vue';
 
 export default Vue.extend({
   name: 'NavBar',
   data: () => ({
     menuVisible: false,
+    navBarItems: ['Challenges'],
   }),
+  components: {
+    NavBarItem,
+  },
 });
 </script>
