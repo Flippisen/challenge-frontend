@@ -1,8 +1,27 @@
 <template>
   <div class='current-challenges-container'>
-    <ChallengeProgress :progress='progress'></ChallengeProgress>
+    <div class='challenge-progress' v-for="challenge in challenges" :key="challenge.id">
+      <div class='challenge-title'>
+        {{ challenge.description }}
+      </div>
+      <ChallengeProgress :progress='challenge.progress'></ChallengeProgress>
+    </div>
   </div>
 </template>
+
+<style lang="scss" scoped>
+  .challenge-progress {
+    padding: 8px 0;
+
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+
+  .challenge-title {
+    padding-bottom: 8px;
+  }
+</style>
 
 <script lang="ts">
 import Vue from 'vue';
@@ -13,10 +32,24 @@ export default Vue.extend({
     ChallengeProgress,
   },
   data: () => ({
-    progress: {
-      current: 75,
-      goal: 100,
-    },
+    challenges: [
+      {
+        id: 'challenge1',
+        description: 'Run 50 miles',
+        progress: {
+          current: 75,
+          goal: 100,
+        },
+      },
+      {
+        id: 'challenge2',
+        description: 'Do 500 pushups',
+        progress: {
+          current: 75,
+          goal: 500,
+        },
+      },
+    ],
   }),
 });
 </script>
