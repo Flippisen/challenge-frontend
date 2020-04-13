@@ -1,5 +1,5 @@
 <template>
-  <md-app md-mode="reveal">
+  <md-app md-mode="reveal" class='app-container'>
     <md-app-toolbar class='md-primary'>
       <md-button class="md-icon-button" @click="menuVisible = !menuVisible">
         <md-icon>menu</md-icon>
@@ -22,6 +22,13 @@
     </md-app-content>
   </md-app>
 </template>
+
+<style lang="scss" scoped>
+  .app-container {
+    display: flex;
+    height: 100%;
+  }
+</style>
 
 <script lang="ts">
 import Vue from 'vue';
