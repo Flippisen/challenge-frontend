@@ -10,8 +10,10 @@
 </template>
 
 <style lang="scss" scoped>
+  @import '@/styles/variables.scss';
+
   .challenge-progress {
-    padding: 8px 0;
+    padding: $padding-small 0;
 
     &:first-child {
       padding-top: 0;
@@ -19,7 +21,7 @@
   }
 
   .challenge-title {
-    padding-bottom: 8px;
+    padding-bottom: $padding-small;
   }
 </style>
 

@@ -5,25 +5,27 @@
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
+  @import '@/styles/variables.scss';
+
   .challenge-progress-container {
     position: relative;
   }
 
   .progress-bar {
-    height: 16px;
-    border-radius: 8px;
+    height: $challenge-progress-bar-height;
+    border-radius: $challenge-progress-bar-border-radius;
   }
 
   .goal {
     width: 100%;
-    background-color: #fefefe;
+    background-color: $challenge-progress-bar-goal-background;
   }
 
   .current {
     position: absolute;
     top: 0;
-    background-color: var(--md-theme-default-accent);
+    background-color: $accent;
   }
 </style>
 

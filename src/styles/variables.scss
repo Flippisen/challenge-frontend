@@ -1,2 +1,13 @@
+$primary: var(--md-theme-default-primary);
+$accent: var(--md-theme-default-accent);
+$theme: var(--md-theme-default-theme);
+
 $font-size: 14px;
 $font-size-large: 20px;
+
+$padding: 16px;
+$padding-small: 8px;
+
+$challenge-progress-bar-height: 16px;
+$challenge-progress-bar-border-radius: calc(#{$challenge-progress-bar-height} / 2);
+$challenge-progress-bar-goal-background: #fff;
