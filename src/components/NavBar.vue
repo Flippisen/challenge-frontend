@@ -7,7 +7,11 @@
     </md-app-toolbar>
 
     <md-app-drawer :md-active.sync='menuVisible'>
-      <md-toolbar class='md-transparent' md-elevation='0'>Navigation</md-toolbar>
+      <md-toolbar class='md-transparent' md-elevation='1'>
+        <div class='brand-logo-container'>
+          <img class='brand-logo' src="@/assets/logo.png"/>
+        </div>
+      </md-toolbar>
 
       <md-list>
         <md-list-item to='/challenges'>
@@ -27,6 +31,16 @@
   .app-container {
     display: flex;
     height: 100%;
+  }
+
+  .brand-logo-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .brand-logo {
+    height: 50px;
   }
 </style>
 
