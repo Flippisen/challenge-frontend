@@ -32,7 +32,7 @@ export default Vue.extend({
   },
   methods: {
     onLogin() {
-      console.log('Hello');
+      this.$router.push('/dashboard');
     },
   },
 });

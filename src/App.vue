@@ -45,7 +45,7 @@ export default Vue.extend({
   },
   computed: {
     isLoggedIn() {
-      return this.$router.currentRoute.path !== '/';
+      return this.$route.path !== '/login';
     },
   },
 });
