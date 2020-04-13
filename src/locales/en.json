@@ -12,5 +12,11 @@
       }
     },
     "Login": "Login"
+  },
+  "Navbar": {
+    "Challenges": {
+      "Icon": "stars",
+      "Title": "Challenges"
+    }
   }
 }

@@ -1,6 +1,9 @@
 <template>
   <div id="app">
-    <router-view/>
+    <NavBar v-if="isLoggedIn">
+      <router-view/>
+    </NavBar>
+    <router-view v-else/>
   </div>
 </template>
 
@@ -31,3 +34,19 @@
   }
 }
 </style>
+
+<script lang="ts">
+import Vue from 'vue';
+import NavBar from '@/components/NavBar.vue';
+
+export default Vue.extend({
+  components: {
+    NavBar,
+  },
+  computed: {
+    isLoggedIn() {
+      return this.$router.currentRoute.path !== '/';
+    },
+  },
+});
+</script>
