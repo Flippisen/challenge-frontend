@@ -17,6 +17,10 @@
     "Challenges": {
       "Icon": "stars",
       "Title": "Challenges"
+    },
+    "Dashboard": {
+      "Icon": "dashboard",
+      "Title": "Dashboard"
     }
   }
 }

@@ -14,7 +14,7 @@
       </md-toolbar>
 
       <md-list>
-        <nav-bar-item v-for="navBarItem of navBarItems" :key='navBarItem' :title="navBarItem">
+        <nav-bar-item v-for="navBarItem of navBarItems" :key='navBarItem.title' :item="navBarItem">
         </nav-bar-item>
       </md-list>
     </md-app-drawer>
@@ -45,12 +45,22 @@
 <script lang="ts">
 import Vue from 'vue';
 import NavBarItem from '@/components/NavBar/NavBarItem.vue';
+import { NavBarItem as NavBarItemModel } from '@/data/NavBarItem';
 
 export default Vue.extend({
   name: 'NavBar',
   data: () => ({
     menuVisible: false,
-    navBarItems: ['Challenges'],
+    navBarItems: [
+      {
+        title: 'Dashboard',
+        link: '',
+      },
+      {
+        title: 'Challenges',
+        link: 'challenges',
+      },
+    ] as NavBarItemModel[],
   }),
   components: {
     NavBarItem,

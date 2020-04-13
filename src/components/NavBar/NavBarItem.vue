@@ -1,21 +1,17 @@
 <template>
-  <md-list-item :to='link'>
-    <md-icon>{{ $t(`Navbar.${title}.Icon`) }}</md-icon>
-    <span class='md-list-item-text' >{{ $t(`Navbar.${title}.Title`) }}</span>
+  <md-list-item :to='`/${item.link}`'>
+    <md-icon>{{ $t(`Navbar.${item.title}.Icon`) }}</md-icon>
+    <span class='md-list-item-text' >{{ $t(`Navbar.${item.title}.Title`) }}</span>
   </md-list-item>
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
+import Vue, { PropType } from 'vue';
+import { NavBarItem } from '@/data/NavBarItem';
 
 export default Vue.extend({
   props: {
-    title: String,
-  },
-  computed: {
-    link() {
-      return `/${this.title.toLowerCase()}`;
-    },
+    item: Object as PropType<NavBarItem>,
   },
 });
 
