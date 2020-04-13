@@ -10,9 +10,9 @@
       <md-toolbar class='md-transparent' md-elevation='0'>Navigation</md-toolbar>
 
       <md-list>
-        <md-list-item to='/'>
-          <md-icon>move_to_inbox</md-icon>
-          <span class='md-list-item-text' >Inbox</span>
+        <md-list-item to='/challenges'>
+          <md-icon>{{ $t('Navbar.Challenges.Icon') }}</md-icon>
+          <span class='md-list-item-text' >{{ $t('Navbar.Challenges.Title') }}</span>
         </md-list-item>
       </md-list>
     </md-app-drawer>
