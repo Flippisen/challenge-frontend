@@ -1,0 +1,16 @@
+{
+  "Login": {
+    "Form": {
+      "Password": {
+        "Required": "Password is required",
+        "Title": "Password"
+      },
+      "Username": {
+        "Email": "Username should be an email",
+        "Required": "Username is required",
+        "Title": "Username"
+      }
+    },
+    "Login": "Login"
+  }
+}
