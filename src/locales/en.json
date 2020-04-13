@@ -1,4 +1,9 @@
 {
+  "Dashboard": {
+    "CurrentChallenges": {
+      "Title": "Current Challenges"
+    }
+  },
   "Login": {
     "Form": {
       "Password": {
